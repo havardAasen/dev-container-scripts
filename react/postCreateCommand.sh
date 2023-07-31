@@ -1,4 +1,6 @@
 #!/bin/sh
 
 npx next telemetry disable
-npm install
+if [ -f ../package.json ]; then
+  npm install
+fi
